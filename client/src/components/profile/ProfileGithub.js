@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getGithubRepos } from "../../actions/profile";
 import Spinner from "../layout/Spinner";
-import { get } from "mongoose";
 
 const ProfileGithub = ({ username, getGithubRepos, repos }) => {
   useEffect(() => {
