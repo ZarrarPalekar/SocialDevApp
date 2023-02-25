@@ -11,6 +11,7 @@ import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 
 import Routes from "./components/routing/Routes";
+import Footer from "./components/layout/Footer";
 // some things we import with {} and some without {} so {} comes when we directly write export in the start of that function from the file that it comes here and we dont write {} when we have default export using which the thing comes to us from the file refer :
 //import { loadUser } from "./actions/auth";
 //import setAuthToken from "./utils/setAuthToken";
@@ -33,6 +34,7 @@ const App = () => {
             <Route exact path="/" component={Landing} />
             <Route component={Routes} />
           </Switch>
+          <Footer />
         </Fragment>
       </Router>
     </Provider>
